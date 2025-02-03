@@ -3,6 +3,12 @@ variable "vpc_id" {
     type        = string
 }
 
+variable "name" {
+    description = "Name"
+    type        = string
+    default     = var.vpc_id
+}
+
 variable "route_table_id" {
     description = "Route Table ID"
     type        = string
@@ -11,5 +17,4 @@ variable "route_table_id" {
 variable "destination_cidr_block" {
     description = "Destination CIDR Block"
     type        = string
-    default = "0.0.0.0/0"
 }
