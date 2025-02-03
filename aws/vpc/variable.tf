@@ -6,5 +6,17 @@ variable "cidr_block" {
 variable "name" {
     description = "Name"
     type        = string
-    default = var.cidr_block
+    default = "vpc"
+}
+
+variable "enable_dns_hostnames" {
+    description = "Enable DNS Hostnames"
+    default     = true
+}
+
+variable "enable_dns_support" {
+    description = "Enable DNS Support"
+    type        = bool
+    default     = true
+  
 }

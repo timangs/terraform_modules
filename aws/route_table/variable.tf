@@ -3,9 +3,10 @@ variable "vpc_id" {
     type        = string  
 }
 
-variable "cidr_block" {
-    description = "CIDR Block"
+variable "name" {
+    description = "Name"
     type        = string
+    default = "route_table"
 }
 
 variable "subnet_id" {

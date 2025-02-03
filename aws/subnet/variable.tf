@@ -16,5 +16,5 @@ variable "cidr_block" {
 variable "name" {
     description = "Name"
     type        = string
-    default = var.cidr_block
+    default = "subnet"
 }
